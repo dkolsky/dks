@@ -142,9 +142,16 @@ class ImageGroup {
 function setup() {
   updateCanvasSize();
 
+function setup() {
+  updateCanvasSize();
+
   let cnv = createCanvas(canvasW, canvasH);
+  cnv.parent('p5-container'); // 👈 This tells p5 where to insert the canvas
+
   cnv.style('display', 'block');
   cnv.style('margin', '0 auto');
+}
+
 
   for (let group of groupData) {
     let start = createVector(group.baseStart.xPct, group.baseStart.yPct);
