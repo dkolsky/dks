@@ -1,3 +1,5 @@
+const CDN_BASE = 'https://cdn.jsdelivr.net/gh/dkolsky/dks@main/dks-2025/';
+
 let aspectRatio;
 let canvasW, canvasH;
 
@@ -45,13 +47,16 @@ let groupData = [
     // Load large images
     for (let group of groupData) {
       for (let img of group.images) {
+        img.file = CDN_BASE + img.file;
         img.img = loadImage(img.file);
+
       }
     }
       // Load small images
   for (let i = 1; i <= 9; i++) {
-    let imgPath = `images/small-set-${nf(i, 2)}-base.png`; 
+    let imgPath = CDN_BASE + `images/small/small-set-${nf(i, 2)}-base.png`;
     let img = loadImage(imgPath);
+
     smallImages.push(img);
   }
   }
