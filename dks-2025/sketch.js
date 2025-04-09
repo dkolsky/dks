@@ -16,9 +16,9 @@ let groupData = [
       baseStart: { xPct: 0.5, yPct: 0.62 },
       baseEnd:   { xPct: -1.25,  yPct: 0 },
       images: [
-        { file: 'images/triangle-base.png', offset: { xPct: 0.02, yPct: 0.01 }, z: 0 },
-        { file: 'images/triangle-light.png', offset: { xPct: 0, yPct: 0.03 }, z: 2 },
-        { file: 'images/triangle-dark.png', offset: { xPct: 0.02, yPct: 0.0 }, z: 1 }
+        { file: 'https://raw.githubusercontent.com/dkolsky/dks/refs/heads/main/dks-2025/images/triangle-base.png', offset: { xPct: 0.02, yPct: 0.01 }, z: 0 },
+        { file: 'https://raw.githubusercontent.com/dkolsky/dks/refs/heads/main/dks-2025/images/triangle-light.png', offset: { xPct: 0, yPct: 0.03 }, z: 2 },
+        { file: 'https://raw.githubusercontent.com/dkolsky/dks/refs/heads/main/dks-2025/images/triangle-dark.png', offset: { xPct: 0.02, yPct: 0.0 }, z: 1 }
       ]
     },
     {
@@ -26,9 +26,9 @@ let groupData = [
       baseStart: { xPct: 0.35, yPct: 0.44 },
       baseEnd:   { xPct: 0.24, yPct: 1.5 },
       images: [
-        { file: 'images/circle-base.png', offset: { xPct: 0.03, yPct: 0.01 }, z: 0 },
-        { file: 'images/circle-light.png', offset: { xPct: 0.01, yPct: -0.01 }, z: 2 },
-        { file: 'images/circle-dark.png', offset: { xPct: 0.05, yPct: 0.04 }, z: 1 }
+        { file: 'https://raw.githubusercontent.com/dkolsky/dks/refs/heads/main/dks-2025/images/circle-base.png', offset: { xPct: 0.03, yPct: 0.01 }, z: 0 },
+        { file: 'https://raw.githubusercontent.com/dkolsky/dks/refs/heads/main/dks-2025/images/circle-light.png', offset: { xPct: 0.01, yPct: -0.01 }, z: 2 },
+        { file: 'https://raw.githubusercontent.com/dkolsky/dks/refs/heads/main/dks-2025/images/circle-dark.png', offset: { xPct: 0.05, yPct: 0.04 }, z: 1 }
       ]
     },
     {
@@ -36,9 +36,9 @@ let groupData = [
       baseStart: { xPct: 0.59, yPct: 0.26 },
       baseEnd:   { xPct: 0.72, yPct: -0.5 },
       images: [
-        { file: 'images/square-base.png', offset: { xPct: 0, yPct: 0 }, z: 0 },
-        { file: 'images/square-light.png', offset: { xPct: 0.0, yPct: -0.0 }, z: 2 },
-        { file: 'images/square-dark.png', offset: { xPct: -0.02, yPct: -0.01 }, z: 1 }
+        { file: 'https://raw.githubusercontent.com/dkolsky/dks/refs/heads/main/dks-2025/images/square-base.png', offset: { xPct: 0, yPct: 0 }, z: 0 },
+        { file: 'https://raw.githubusercontent.com/dkolsky/dks/refs/heads/main/dks-2025/images/square-light.png', offset: { xPct: 0.0, yPct: -0.0 }, z: 2 },
+        { file: 'https://raw.githubusercontent.com/dkolsky/dks/refs/heads/main/dks-2025/images/square-dark.png', offset: { xPct: -0.02, yPct: -0.01 }, z: 1 }
       ]
     }
   ];
