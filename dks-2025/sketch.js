@@ -50,7 +50,7 @@ let groupData = [
     }
       // Load small images
   for (let i = 1; i <= 9; i++) {
-    let imgPath = `images/small/small-set-${nf(i, 2)}-base.png`; 
+    let imgPath = `images/small-set-${nf(i, 2)}-base.png`; 
     let img = loadImage(imgPath);
     smallImages.push(img);
   }
