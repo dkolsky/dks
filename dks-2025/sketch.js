@@ -134,6 +134,7 @@ let groupData = [
         updateCanvasSize();
       
         let cnv = createCanvas(canvasW, canvasH);
+        cnv.parent('p5-container');
         cnv.style('display', 'block');
         cnv.style('margin', '0 auto');
       
