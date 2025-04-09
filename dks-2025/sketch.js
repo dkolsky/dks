@@ -43,23 +43,24 @@ let groupData = [
     }
   ];
 
-  function preload() {
-    // Load large images
-    for (let group of groupData) {
-      for (let img of group.images) {
-        img.file = CDN_BASE + img.file;
-        img.img = loadImage(img.file);
-
-      }
+function preload() {
+  // Load large images
+  for (let group of groupData) {
+    for (let img of group.images) {
+      img.file = CDN_BASE + img.file; // 👈 override the original relative path
+      img.img = loadImage(img.file);
     }
-      // Load small images
-  for (let i = 1; i <= 9; i++) {
-    let imgPath = CDN_BASE + `images/small/small-set-${nf(i, 2)}-base.png`;
-    let img = loadImage(imgPath);
+  }
 
+  // Load small images
+  for (let i = 1; i <= 9; i++) {
+    let filename = `images/small/small-set-${nf(i, 2)}-base.png`;
+    let imgPath = CDN_BASE + filename; // 👈 full GitHub path
+    let img = loadImage(imgPath);
     smallImages.push(img);
   }
-  }
+}
+
 
   class ImageGroup {
     constructor(imageObjs, baseStart, baseEnd, scaleFactor = 1, zIndex = 0) {
