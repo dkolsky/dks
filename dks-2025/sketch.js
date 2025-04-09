@@ -1,5 +1,5 @@
 //related to serving imgs via cdn
-const CDN_BASE = 'https://cdn.jsdelivr.net/gh/dkolsky/dks@main/dks-2025/';
+const IMG_BASE = 'https://cdn.prod.website-files.com/65342c5b5190e82a7eab74b7/';
 
 let aspectRatio;
 let canvasW, canvasH;
@@ -48,17 +48,23 @@ function preload() {
   // Load large images
   for (let group of groupData) {
     for (let img of group.images) {
-      img.file = CDN_BASE + img.file; // Prefix full path
+      img.file = IMG_BASE + getFilename(img.file); // 👈 pull just the filename
       img.img = loadImage(img.file);
     }
   }
 
   // Load small images
   for (let i = 1; i <= 9; i++) {
-    let imgPath = `${CDN_BASE}images/small/small-set-${nf(i, 2)}-base.png`;
+    let filename = `small-set-${nf(i, 2)}-base.png`;
+    let imgPath = IMG_BASE + filename;
     let img = loadImage(imgPath);
     smallImages.push(img);
   }
+}
+
+//strips previous folders from image paths
+function getFilename(path) {
+  return path.split('/').pop();
 }
 
   class ImageGroup {
