@@ -179,7 +179,7 @@ let groupData = [
   }  
 
 function draw() {
-  background('#d9d9d9');
+  background('#353535');
 
   let currentScrollY = window.scrollY;
   scrollVelocity = abs(currentScrollY - lastScrollY);
