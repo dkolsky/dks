@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background: #f7f7f7;
+  }
+  
+  #canvas-holder {
+    margin-bottom: 20px;
+  }
+  
+  button, input[type="range"] {
+    margin-top: 5px;
+  }
