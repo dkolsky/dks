@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>codedTypes</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js"></script>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #controlPanel {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      padding: 20px;
+      background-color: #181818;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+    #controlPanel input,
+    #controlPanel select,
+    #controlPanel button {
+      font-size: 12px;
+      padding: 4px 8px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 4px;
+      border: 1px solid #C8F7E5;
+      color: black;
+      font-family: Helvetica, sans-serif;
+    }
+    #controlPanel label {
+      color: white;
+      font-size: 12px;
+      font-family: Helvetica, sans-serif;
+      margin-right: 4px;
+    }
+    canvas {
+      display: block;
+      margin-top: 100px; /* ensures canvas isn't hidden under controls */
+    }
+  </style>
+  <link rel="stylesheet" href="ui-style.css">
+</head>
+<body>
+  <div id="controlPanel"></div>
+  <script src="sketch.js"></script>
+</body>
+</html>

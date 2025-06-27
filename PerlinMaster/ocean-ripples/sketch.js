@@ -5,11 +5,11 @@ let baseLayer, midLayer, boostedLayer;
 let circles = [];
 let boostedCircles = [];
 
-let noiseScale = 0.005; // initial noise detail
+let noiseScale = 0.05; // initial noise detail
 let boostMinSlider, boostMaxSlider, numBoostedSlider, noiseScaleSlider;
 
 function setup() {
-  let cnv = createCanvas(1200, 800);
+  let cnv = createCanvas(1300, 1300);
   cnv.parent('canvas-holder');
   noLoop();
 

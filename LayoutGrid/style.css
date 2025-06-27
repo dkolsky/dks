@@ -1,0 +1,45 @@
+
+
+#ui-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 10;
+  color: #f0f0f0;
+}
+
+.control-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#canvas-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 300px;
+}
+
+  .shape-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;  /* space between each input group */
+    padding: 12px;
+    border: 1px solid #181818;
+    border-radius: 6px;
+    width: 250px;
+    background-color: #1e1e1e;
+  }
+
+.shape-block span,
+.shape-block label {
+  color: #f0f0f0;
+}
